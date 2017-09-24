@@ -120,4 +120,3 @@
 		</div>
 	</div>
 </div>
-<%--<% request.getSession().removeAttribute("searchField");%>--%>

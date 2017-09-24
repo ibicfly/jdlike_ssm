@@ -11,6 +11,8 @@
 <link rel="stylesheet" href="css/register.css">
 </head>
 <body>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/register.js"></script>
 	<jsp:include page="head.jsp"></jsp:include>
 	<div id="content">
 		<div id="content-left">
@@ -23,7 +25,7 @@
 					<div class="box_center">
 						<div class="orange">致辞:</div>
 						<p class="details">欢迎加入Book
-							Store商店，在这里你可以买到很多很多好玩又好看的书。不仅能增加你的知识，还能边看边玩。</p>
+							Store商店，在这里你可以买到很多很多好玩又好看的书。</p>
 					</div>
 					<div class="box_bottom"></div>
 				</div>

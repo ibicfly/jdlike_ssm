@@ -8,13 +8,10 @@
 <link rel="stylesheet" href="css/content.css">
 <link rel="stylesheet" href="css/footer.css">
 <link rel="stylesheet" href="css/contact.css">
-<script type="text/javascript">
-	function submmm() {
-		document.form1.submit();
-	}
-</script>
 </head>
 <body>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
 	<jsp:include page="head.jsp"></jsp:include>
 	<div id="content">
 		<div id="content-left">
@@ -35,21 +32,20 @@
 			<div id="contact">
 				<form name="form1" action="addFeedBack.action" method="post">
 					<div class="contact_title">需填满所有框</div>
-
 					<div class="row1">
-						<label>姓&nbsp;&nbsp;&nbsp;&nbsp;名:</label>&nbsp;<input name="name">
+						<label>姓&nbsp;&nbsp;&nbsp;&nbsp;名:</label>&nbsp;<input name="name" id="contact_name">
 					</div>
 					<div class="row2">
-						<label>E-mail:</label>&nbsp;<input name="email">
+						<label>E-mail:</label>&nbsp;<input name="email" id="contact_email">
 					</div>
 					<div class="row3">
-						<label>标&nbsp;&nbsp;&nbsp;&nbsp;题:</label>&nbsp;<input name="subject">
+						<label>标&nbsp;&nbsp;&nbsp;&nbsp;题:</label>&nbsp;<input name="subject" id="contact_subject">
 					</div>
 					<div class="row4">
 						<label>正&nbsp;&nbsp;&nbsp;&nbsp;文:</label>
 					</div>
 					<div class="row5">
-						<textarea name="msg"></textarea>
+						<textarea name="msg" id="contact_msg"></textarea>
 					</div>
 					<div class="row6">
 						<input type="hidden" name="ip" value="<%=request.getRemoteAddr()%>">

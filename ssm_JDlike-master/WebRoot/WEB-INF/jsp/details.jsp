@@ -42,7 +42,7 @@
 					<legend>详细介绍</legend>
 					<div class="ttt">
 						<span>名称:</span>
-						<marquee direction="right">${goods.goodsname }</marquee>
+						${goods.goodsname }
 						<br> <span>价格:￥${goods.goodsprice }</span>
 					</div>
 					<hr>

@@ -1,6 +1,6 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8" %>
 
-    <div id="footer">
+    <div id="footer" >
         <div class="footer-left">
             <img src="images/footer_logo.gif">
         </div>

@@ -25,8 +25,8 @@
 		<div id="login">
 			<form action="login.action" method="post">
 				<div>
-					账号：<input type="text" name="username"><br /> 密码：<input
-						type="password_" name="password_">
+					账号：<input type="text" name="head_username"><br /> 密码：<input
+						type="password" name="head_password">
 				</div>
 				<div id="denglu">
 					<input type="submit" value="登陆">
