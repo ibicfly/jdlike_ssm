@@ -32,7 +32,7 @@
 		<!-- mybatis配置文件 -->
 		<property name="configLocation" value="classpath:mybatis/SqlMapConfig.xml"/>
 		 <!-- 由于usermapper。xml与接口不在同一目录，需要进行分配配置 -->
-		<property name="mapperLocations" value="classpath:cn/leizhang/mapper/*.xml"/>
+		<property name="mapperLocations" value="classpath:com/bookstore/mapper/*.xml"/>
 	</bean>
 	
 	
@@ -46,7 +46,7 @@
 		要求mapper.xml和mapper.java同名且在同一个目录 
 		 -->
 		 <!-- 由于usermapper。xml与接口不在同一目录，需要进行分配配置 -->
-		<property name="basePackage" value="cn.leizhang.dao"/>
+		<property name="basePackage" value="com.bookstore.dao"/>
 		
 		<!-- 使用sqlSessionFactoryBeanName -->
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>

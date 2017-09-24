@@ -6,6 +6,6 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.7"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/tomcat6.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/tomcat7.0"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>

@@ -38,7 +38,7 @@
 	 <!-- aop -->
 	 <aop:config>
 	 	<aop:advisor advice-ref="txAdvice"
-	 				 pointcut="execution(* cn.leizhang.service.*.*(..))"/>
+	 				 pointcut="execution(* com.bookstore.service.*.*(..))"/>
 	 </aop:config>
 	
 </beans>

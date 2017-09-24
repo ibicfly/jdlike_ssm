@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="JDlike_ssm">
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="bookStore">
         <wb-resource deploy-path="/" source-path="/WebRoot"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/config"/>
-        <property name="context-root" value="/JDlike_ssm"/>
-        <property name="java-output-path" value="/JDlike_ssm/WebRoot/WEB-INF/classes"/>
+        <property name="java-output-path" value="/bookStore/WebRoot/WEB-INF/classes"/>
+        <property name="context-root" value="/bookStore"/>
     </wb-module>
 </project-modules>

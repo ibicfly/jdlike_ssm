@@ -1,5 +1,5 @@
 <%@ page language="java"
-	import="java.util.*,cn.leizhang.domain.User,javax.servlet.http.HttpSession"
+	import="java.util.*,com.bookstore.domain.User,javax.servlet.http.HttpSession"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>

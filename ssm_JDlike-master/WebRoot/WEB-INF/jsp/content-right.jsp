@@ -1,14 +1,14 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<%@ page language="java" import="cn.leizhang.serviceimpl.GoodsServiceImpl" %>
-<%@ page language="java" import="cn.leizhang.serviceimpl.ShoppingCartServiceImpl" %>
-<%@ page language="java" import="cn.leizhang.service.ShoppingCartService" %>
+<%@ page language="java" import="com.bookstore.serviceimpl.GoodsServiceImpl" %>
+<%@ page language="java" import="com.bookstore.serviceimpl.ShoppingCartServiceImpl" %>
+<%@ page language="java" import="com.bookstore.service.ShoppingCartService" %>
 <%@ page language="java" import="net.sf.json.JSONObject" %>
-<%@ page language="java" import="cn.leizhang.domain.ShoppingCart" %>
-<%@ page language="java" import="cn.leizhang.domain.CartItem" %>
+<%@ page language="java" import="com.bookstore.domain.ShoppingCart" %>
+<%@ page language="java" import="com.bookstore.domain.CartItem" %>
 <%@ page language="java" import="org.apache.commons.codec.binary.Base64"%>
-<%@ page language="java" import="cn.leizhang.dao.GoodsMapper" %>
+<%@ page language="java" import="com.bookstore.dao.GoodsMapper" %>
 
 
 

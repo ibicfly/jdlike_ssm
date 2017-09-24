@@ -13,16 +13,16 @@
 		http://www.springframework.org/schema/tx 
 		http://www.springframework.org/schema/tx/spring-tx-3.2.xsd ">
 			<!-- 用户登录的service -->
-		<bean id="userService" class="cn.leizhang.serviceimpl.UserServiceImpl">
+		<bean id="userService" class="com.bookstore.serviceimpl.UserServiceImpl">
 	
 		</bean>
-		<bean id="goodsService" class="cn.leizhang.serviceimpl.GoodsServiceImpl">
+		<bean id="goodsService" class="com.bookstore.serviceimpl.GoodsServiceImpl">
 	
 		</bean>
-		<bean id="feedBackService" class="cn.leizhang.serviceimpl.FeedBackServiceImpl">
+		<bean id="feedBackService" class="com.bookstore.serviceimpl.FeedBackServiceImpl">
 	
 		</bean>
-		<bean id="shoppingCartServiceImpl" class="cn.leizhang.serviceimpl.ShoppingCartServiceImpl">
+		<bean id="shoppingCartServiceImpl" class="com.bookstore.serviceimpl.ShoppingCartServiceImpl">
 	
 		</bean>
 	
