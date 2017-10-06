@@ -11,7 +11,7 @@ body {
 
     height: 181px;
 
-    background-image: url(../images/header.jpg);
+    background-image: url(../images/header1.jpg);
 
     margin: 0 auto;
 
@@ -28,7 +28,7 @@ body {
     margin-right: auto;
 
 }
-
+/*
 #login {
 
     float: right;
@@ -39,31 +39,17 @@ body {
 
     font-size: small;
 
-    /*
+    
     display: inline;
     margin-left: 470px;
     position:relative;
     top: 30px;
     right:-20px;
     width: 20px;
+
+
+}
 */
-
-}
-
-#login input {
-
-    color: white;
-
-    background-color: transparent;
-
-    border-radius: 5px;
-
-    height: 20px;
-
-    margin-top: 4px;
-
-}
-
 #login #denglu {
 
     float: right;

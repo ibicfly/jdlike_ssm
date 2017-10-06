@@ -14,13 +14,13 @@ public class UserServiceImpl implements UserService{
 	@Autowired
 	private UserMapper userMapper;
 	public User userLogin(User user) {
-		User user2=userMapper.selectUserByName(user.getUsername());
-		if(user2!=null&&user2.getPassword_().equals(user.getPassword_()))
+		User temp=userMapper.selectUserByName(user.getUsername());
+		if(temp!=null&&temp.getPassword_().equals(user.getPassword_()))
 		{
-			return user2;
+			return temp;
 		}
 		
-		return user2;
+		return temp;
 	}
 	@Override
 	public void updateUser(User user) {

@@ -35,9 +35,6 @@
 					 <a href="books.action?currentPage=${PageNumber}&action=lastPage">上一页 </a>&nbsp;&nbsp;
 					 <a href="books.action?currentPage=${PageNumber}&action=nextPage">下一页 </a>&nbsp;
 					<span><font size="2" color="black">当前第&nbsp;${PageNumber }&nbsp;页</font></span>
-				
-
-					
 				</div>
 			</div>
 		</div>

@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-		登陆成功！！！！！！！！！！！！！！！
+		登陆成功！
 </body>
 </html>

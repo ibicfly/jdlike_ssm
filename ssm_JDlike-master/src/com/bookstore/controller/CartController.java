@@ -131,8 +131,7 @@ public class CartController {
 		response.addCookie(cookie);
 		byte [] by =Base64.decodeBase64(cookie.getValue().getBytes());
 		JSONObject scc = JSONObject.fromObject(new String(by));
-		ShoppingCart shopcart = (ShoppingCart) JSONObject.toBean(scc,
-				ShoppingCart.class);
+		ShoppingCart shopcart = (ShoppingCart) JSONObject.toBean(scc,ShoppingCart.class);
 		session.setAttribute("shoppingcart2", shopcart);
 		List<CartItem> cartItem = shoppingCartService.generateCartItem(shopcart);
 	

@@ -151,7 +151,6 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
 		shopcart.setTotal_Money(shopcart.getTotal_Money() - money);
 		String str = JSONObject.fromObject(shopcart).toString();
 		return str;
-
 	}
 	//根据购物车基本信息构造购物车列表
 	public List<CartItem> generateCartItem(ShoppingCart shopcart)
@@ -162,7 +161,6 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
 		 Goods goods=null;
 		 for(String str: hsm.keySet())
 		 {
-			
 			 	goods=goodsService.selectGoodsById(str);
 			 	 ci=new CartItem();
 			 	ci.setGoodsname(goods.getGoodsname());
@@ -173,9 +171,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
 			 	ci.setSubtotal_money(hsm.get(str)*goods.getGoodsprice());
 			 	
 			 	list.add(ci);
-			 	
 		 }
-		 
 		return list;
 	}
 }

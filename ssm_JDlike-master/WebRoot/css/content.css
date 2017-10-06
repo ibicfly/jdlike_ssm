@@ -39,7 +39,7 @@ body
 #content-right #banner
 {
     padding: 0;
-    
+    margin:15px;
 }
 #content-right #total
 {
@@ -122,12 +122,12 @@ a
 }
 .middle
 {
-    margin: 0 auto;
+    margin: 0 ;
     text-align: center;
 }
 .middle img
 {
-    margin: 15px auto;
+    margin: 15px ;
 }
 .gray
 {

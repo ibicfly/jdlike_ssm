@@ -28,12 +28,15 @@ public class UserController {
 	public String UserLogin(HttpSession session,User user,Model model)
 	{
 		
-		User user2=userService.userLogin(user);
-		
-		if(user2!=null)
+		User temp=userService.userLogin(user);
+		if(temp!=null&&!temp.getUsername().equals("admin"))
 		{
-		session.setAttribute("LoginUser", user2);
-		return "forward:index.action";
+		session.setAttribute("LoginUser", temp);
+		return "redirect:index.action";
+		}else if(temp!=null)
+		{
+			session.setAttribute("Admin", temp);
+			return "manager";
 		}
 		else
 		{
@@ -42,11 +45,12 @@ public class UserController {
 		}
 	}
 		//用户注销
-		@RequestMapping("/LogOut")
+		@RequestMapping("/logOut")
 		public String UserLogOut(HttpSession session)
 		{
 			
 			session.removeAttribute("LoginUser");
+			session.removeAttribute("Admin");
 			return "redirect:index.action";
 		}
 	

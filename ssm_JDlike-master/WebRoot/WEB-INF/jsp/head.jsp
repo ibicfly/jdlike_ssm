@@ -5,18 +5,26 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>易购书店</title>
+<title>书店</title>
 </head>
 <body>
 
 	<div id="header">
 		<img src="images/logo.gif">
 		<c:choose>  
+		<c:when test="${Admin!=null}">
+			
+			<div class="welcome">
+		<a href="myaccount.action">欢迎你，${Admin.username}</a><span >&nbsp;&nbsp;角色:${Admin.grade}</span>&nbsp;&nbsp;<a
+				href="logOut.action">注销</a>
+		</div>
+			
+		</c:when>
 		<c:when test="${LoginUser!=null}">
 			
 			<div class="welcome">
-		<a href="myaccount.action">欢迎你，${LoginUser.username}</a><span >&nbsp;&nbsp;角色:${LoginUser.grade}<font color="blue">管理员</font></span>&nbsp;&nbsp;<a
-				href="LogOut.action">注销</a>
+		<a href="myaccount.action">欢迎你，${LoginUser.username}</a><span >&nbsp;&nbsp;角色:${LoginUser.grade}</span>&nbsp;&nbsp;<a
+				href="logOut.action">注销</a>
 		</div>
 			
 		</c:when>
@@ -25,8 +33,8 @@
 		<div id="login">
 			<form action="login.action" method="post">
 				<div>
-					账号：<input type="text" name="head_username"><br /> 密码：<input
-						type="password" name="head_password">
+					账号：<input type="text" name="username"><br /> 密码：<input
+						type="password" name="password">
 				</div>
 				<div id="denglu">
 					<input type="submit" value="登陆">
@@ -35,32 +43,34 @@
 
 		</div>
 		</c:otherwise>
-		</c:choose>  
+		</c:choose> 
+		<c:if test="${Admin==null}">
 		<div id="menu">
-			<ul>
-				<li><a href="index.action"
-					>主页</a>
-				</li>
-				<li><a href="about.action"
-					>关于</a>
-				</li>
-				<li><a href="books.action?currentPage=0&action=keep"
-					>书籍</a>
-				</li>
-				<li><a href="special.action"
-					>特别推荐</a>
-				</li>
-				<li><a href="myaccount.action"
-					>我的账号</a>
-				</li>
-				<li><a href="register.action"
-					>注册</a>
-				</li>
-				<li><a href="contact.action"
-					>留言</a>
-				</li>
-			</ul>
+		<ul>
+			<li><a href="index.action"
+				>主页</a>
+			</li>
+			<li><a href="about.action"
+				>关于</a>
+			</li>
+			<li><a href="books.action?currentPage=0&action=keep"
+				>书籍</a>
+			</li>
+			<li><a href="special.action"
+				>特别推荐</a>
+			</li>
+			<li><a href="myaccount.action"
+				>我的账号</a>
+			</li>
+			<li><a href="register.action"
+				>注册</a>
+			</li>
+			<li><a href="contact.action"
+				>留言</a>
+			</li>
+		</ul>
 		</div>
+		</c:if>
 	</div>
 
 </body>

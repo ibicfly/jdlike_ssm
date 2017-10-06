@@ -67,18 +67,17 @@
 	<div id="bottom" class="gray">
 		<div id="left">
 			<img src="images/bullet4.gif">促销:
-
 			<div class="promotebook">
 				<div class="title"></div>
 				<c:if test="${promotionGoods!=null}">
 					<c:forEach items="${ promotionGoods}" var="good1">
-						<div class="promotebook-box">
-							<a href="ShowDetail.action?id=${good1.goodsid}"> <span
-								class="promote"> <img src="images/promo_icon.gif">
-							</span> <img src="images/banner/${good1.photo}"> </a>
+					<div class="promotebook-box">
+						<a href="ShowDetail.action?id=${good1.goodsid}"> <span
+							class="promote"> <img src="images/promo_icon.gif">
+						</span> <img src="images/banner/${good1.photo}"> </a>
 
-						</div>
-						<br />
+					</div>
+					<br />
 					</c:forEach>
 				</c:if>
 			</div>
@@ -88,35 +87,20 @@
 		<img src="images/bullet3.gif">种类:
 		<table>
 			<tr>
-				<td><a href="##">C++</a>
-				</td>
+				<td><a href="##">C++</a></td>
 			</tr>
 			<tr>
-				<td><a href="##">JAVA</a>
-				</td>
+				<td><a href="##">JAVA</a></td>
 			</tr>
 			<tr>
-				<td><a href="##">JAVASCRIPT</a>
-				</td>
+				<td><a href="##">JAVASCRIPT</a></td>
 			</tr>
 			<tr>
-				<td><a href="##">ASP .NET</a>
-				</td>
+				<td><a href="##">ASP .NET</a></td>
 			</tr>
 			<tr>
-				<td><a href="##">AJAX</a>
-				</td>
+				<td><a href="##">AJAX</a></td>
 			</tr>
 		</table>
-		<div>
-			<img src="images/bullet6.gif">新用户:
-			<table class="flag">
-
-				<tr>
-					<td></td>
-				</tr>
-
-			</table>
-		</div>
 	</div>
 </div>
